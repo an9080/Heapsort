@@ -1,0 +1,19 @@
+# Define 2 vectors
+time_taken <- c(2185848, 2809074, 3696687, 4485109, 5657532,7226719,8020976,9272168,10690380,11774187)
+# Calculate range from 0 to max value
+g_range <- range(0, 100000)
+# Graph autos using y axis that ranges from 0 to max 
+# value in cars or trucks vector.  Turn off axes and 
+# annotations (axis labels) so we can specify them ourself
+plot(time_taken, type="o", col="blue", ylim=c(2185848,11774187), ann=FALSE)
+# Make x axis using 10000-1000000 labels
+axis(1, at=1:10, lab=c("10000","20000","30000","40000","50000","60000","70000","80000","90000","100000"))
+# Create box around plot
+box()
+# Create a title with a red, bold/italic font
+title(main="Thulathi Heap Sort", col.main="red", font.main=1000000)
+
+# Label the x and y axes with dark green text
+title(xlab="Array size", col.lab=rgb(0,0.5,0))
+title(ylab="Time Taken", col.lab=rgb(0,0.5,0))
+
